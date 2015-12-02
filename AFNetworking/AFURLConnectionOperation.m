@@ -175,12 +175,6 @@ static inline BOOL AFStateTransitionIsValid(AFOperationState fromState, AFOperat
     return _networkRequestThread;
 }
 
-
-- (instancetype)init NS_UNAVAILABLE
-{
-    return nil;
-}
-
 - (instancetype)initWithRequest:(NSURLRequest *)urlRequest {
     NSParameterAssert(urlRequest);
 

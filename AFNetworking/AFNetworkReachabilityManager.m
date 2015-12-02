@@ -112,11 +112,6 @@ static void AFNetworkReachabilityReleaseCallback(const void *info) {
 
 @implementation AFNetworkReachabilityManager
 
-- (instancetype)init NS_UNAVAILABLE
-{
-    return nil;
-}
-
 + (instancetype)sharedManager {
     static AFNetworkReachabilityManager *_sharedManager = nil;
     static dispatch_once_t onceToken;
